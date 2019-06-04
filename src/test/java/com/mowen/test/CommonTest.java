@@ -1,6 +1,6 @@
 package com.mowen.test;
 
-import com.mowen.nettylearn.common.util.DateUtil;
+import com.mowen.common.util.DateUtil;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;

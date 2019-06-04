@@ -1,7 +1,7 @@
 package com.mowen.nettylearn.stickSplitPackage.hessian2;
 
 import com.mowen.nettylearn.NettyServer;
-import com.mowen.nettylearn.common.CodecFactory;
+import com.mowen.nettylearn.factory.CodecFactory;
 import com.mowen.nettylearn.handler.MessageHandler;
 import com.mowen.nettylearn.handler.child.BaseChildHandler;
 

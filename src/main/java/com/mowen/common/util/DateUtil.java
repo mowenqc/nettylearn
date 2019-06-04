@@ -1,4 +1,4 @@
-package com.mowen.nettylearn.common.util;
+package com.mowen.common.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

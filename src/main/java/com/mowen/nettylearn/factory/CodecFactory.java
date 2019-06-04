@@ -1,4 +1,4 @@
-package com.mowen.nettylearn.common;
+package com.mowen.nettylearn.factory;
 
 import com.mowen.nettylearn.codec.hessian2.Hessian2Decoder;
 import com.mowen.nettylearn.codec.hessian2.Hessian2Encoder;

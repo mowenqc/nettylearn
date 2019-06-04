@@ -64,5 +64,25 @@
       <artifactId>kryo-serializers</artifactId>
       <version>0.45</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-framework</artifactId>
+      <version>4.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.curator</groupId>
+      <artifactId>curator-recipes</artifactId>
+      <version>4.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>3.2.12</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.errai.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>4.6.0.Final</version>
+    </dependency>
   </dependencies>
 </project>

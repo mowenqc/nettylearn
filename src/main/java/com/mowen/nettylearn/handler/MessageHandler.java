@@ -1,7 +1,7 @@
 package com.mowen.nettylearn.handler;
 
 import com.mowen.nettylearn.ContextManager;
-import com.mowen.nettylearn.common.util.DateUtil;
+import com.mowen.common.util.DateUtil;
 import com.mowen.nettylearn.domain.ReMessage;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

@@ -1,7 +1,7 @@
 package com.mowen.nettylearn.stickSplitPackage.kryo;
 
 import com.mowen.nettylearn.NettyClient;
-import com.mowen.nettylearn.common.CodecFactory;
+import com.mowen.nettylearn.factory.CodecFactory;
 import com.mowen.nettylearn.handler.child.BaseChildHandler;
 import com.mowen.nettylearn.stickSplitPackage.kryo.handler.KryoClientMessageHandler;
 
