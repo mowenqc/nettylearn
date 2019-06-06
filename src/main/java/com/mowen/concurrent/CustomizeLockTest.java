@@ -1,6 +1,4 @@
-package com.mowen.concurrentlearn;
-
-import java.util.concurrent.atomic.AtomicInteger;
+package com.mowen.concurrent;
 
 /***
  * desc  : com.mowen.concurrentlearn

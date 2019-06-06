@@ -1,8 +1,7 @@
-package com.mowen.dynamicproxylearn.Javassist;
+package com.mowen.dynamicproxy.Javassist;
 
-import com.mowen.dynamicproxylearn.DynamicProxy;
+import com.mowen.dynamicproxy.DynamicProxy;
 import java.lang.reflect.Method;
-import javassist.util.proxy.MethodFilter;
 import javassist.util.proxy.MethodHandler;
 import javassist.util.proxy.ProxyFactory;
 import org.apache.log4j.Logger;

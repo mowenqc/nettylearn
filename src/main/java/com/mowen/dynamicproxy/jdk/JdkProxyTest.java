@@ -1,4 +1,4 @@
-package com.mowen.dynamicproxylearn.jdk;
+package com.mowen.dynamicproxy.jdk;
 
 import com.mowen.common.domain.Coupon;
 import com.mowen.common.service.ICouponService;

@@ -1,4 +1,4 @@
-package com.mowen.dynamicproxylearn.cglib;
+package com.mowen.dynamicproxy.cglib;
 
 import com.mowen.common.domain.Consult;
 import com.mowen.common.service.IConsultService;

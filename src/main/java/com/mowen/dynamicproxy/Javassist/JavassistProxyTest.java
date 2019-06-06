@@ -1,4 +1,4 @@
-package com.mowen.dynamicproxylearn.Javassist;
+package com.mowen.dynamicproxy.Javassist;
 
 import com.mowen.common.domain.Consult;
 import com.mowen.common.service.IConsultService;

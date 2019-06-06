@@ -1,4 +1,4 @@
-package com.mowen.concurrentlearn;
+package com.mowen.concurrent;
 
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 

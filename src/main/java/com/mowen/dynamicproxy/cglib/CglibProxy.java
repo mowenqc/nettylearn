@@ -1,6 +1,6 @@
-package com.mowen.dynamicproxylearn.cglib;
+package com.mowen.dynamicproxy.cglib;
 
-import com.mowen.dynamicproxylearn.DynamicProxy;
+import com.mowen.dynamicproxy.DynamicProxy;
 import java.lang.reflect.Method;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

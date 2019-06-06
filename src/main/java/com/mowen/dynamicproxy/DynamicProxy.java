@@ -1,4 +1,4 @@
-package com.mowen.dynamicproxylearn;
+package com.mowen.dynamicproxy;
 
 /***
  * desc  : com.mowen.dynamicproxylearn.cglib
