@@ -1,4 +1,4 @@
-package com.mowen.nettyapplication.rpc.domain;
+package com.mowen.common.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -88,5 +88,17 @@ public class Order implements Serializable {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+            "orderSn='" + orderSn + '\'' +
+            ", userId=" + userId +
+            ", amount=" + amount +
+            ", createTime=" + createTime +
+            ", payTime=" + payTime +
+            ", status=" + status +
+            '}';
     }
 }

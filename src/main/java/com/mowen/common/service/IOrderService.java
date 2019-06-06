@@ -1,6 +1,6 @@
-package com.mowen.nettyapplication.rpc.service;
+package com.mowen.common.service;
 
-import com.mowen.nettyapplication.rpc.domain.Order;
+import com.mowen.common.domain.Order;
 import java.util.List;
 
 /***

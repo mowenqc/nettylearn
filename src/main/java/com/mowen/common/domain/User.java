@@ -1,4 +1,4 @@
-package com.mowen.nettyapplication.rpc.domain;
+package com.mowen.common.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -64,5 +64,15 @@ public class User  implements Serializable {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+            "userId=" + userId +
+            ", name='" + name + '\'' +
+            ", email='" + email + '\'' +
+            ", birthday=" + birthday +
+            '}';
     }
 }

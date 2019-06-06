@@ -1,8 +1,8 @@
-package com.mowen.nettyapplication.rpc.service.impl;
+package com.mowen.common.service.impl;
 
-import com.mowen.nettyapplication.rpc.domain.User;
+import com.mowen.common.domain.User;
 import com.mowen.nettyapplication.rpc.ioc.annotation.Service;
-import com.mowen.nettyapplication.rpc.service.IUserService;
+import com.mowen.common.service.IUserService;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +13,7 @@ import java.util.List;
  * project_name : mowen_parent
  */
 @Service
-public class UserService implements IUserService {
+public class UserServiceImpl implements IUserService {
 
     /**
      * 模拟用户表

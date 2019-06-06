@@ -1,8 +1,8 @@
-package com.mowen.nettyapplication.rpc.service.impl;
+package com.mowen.common.service.impl;
 
-import com.mowen.nettyapplication.rpc.domain.Order;
+import com.mowen.common.domain.Order;
 import com.mowen.nettyapplication.rpc.ioc.annotation.Service;
-import com.mowen.nettyapplication.rpc.service.IOrderService;
+import com.mowen.common.service.IOrderService;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * project_name : mowen_parent
  */
 @Service
-public class OrderService implements IOrderService {
+public class OrderServiceImpl implements IOrderService {
 
     /**
      * 模拟订单表
