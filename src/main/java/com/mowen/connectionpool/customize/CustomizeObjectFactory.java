@@ -1,5 +1,6 @@
 package com.mowen.connectionpool.customize;
 
+import com.mowen.connectionpool.druid.Config;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -21,6 +22,10 @@ public class CustomizeObjectFactory implements AbstractObjectFactory<Connection>
 
 
     public CustomizeObjectFactory(){
+        System.setProperty("driver", Config.DRIVER);
+        System.setProperty("jdbc-url", Config.URL);
+        System.setProperty("username", Config.USER_NAME);
+        System.setProperty("password", Config.PASSWORD);
         init();
     }
 

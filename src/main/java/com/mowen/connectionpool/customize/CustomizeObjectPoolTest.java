@@ -20,11 +20,6 @@ import java.util.Map;
 public class CustomizeObjectPoolTest {
 
     public static void main(String[] args) {
-        System.setProperty("driver", Config.DRIVER);
-        System.setProperty("jdbc-url", Config.URL);
-        System.setProperty("username", Config.USER_NAME);
-        System.setProperty("password", Config.PASSWORD);
-
         CustomizeObjectPool<Connection> commonConnectionPool = new CustomizeObjectPool();
         Connection connection = null;
         try {
