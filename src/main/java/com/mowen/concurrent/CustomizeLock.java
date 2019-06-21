@@ -22,7 +22,6 @@ public class CustomizeLock {
     }
 
     public class Aync extends AbstractQueuedSynchronizer {
-
         @Override
         protected boolean tryAcquire(int arg) {
             //自旋锁

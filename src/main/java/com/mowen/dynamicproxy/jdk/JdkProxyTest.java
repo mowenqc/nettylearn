@@ -13,8 +13,7 @@ import com.mowen.common.service.impl.CouponServiceImpl;
 public class JdkProxyTest {
 
     public static void main(String[] args) {
-
-        ICouponService proxy =  new ProxyIncocationHandler<ICouponService>(new CouponServiceImpl()).getProxy();
+        ICouponService proxy =  new ProxyIncocationHandler<ICouponService>(new CouponServiceImpl()).proxy();
         Coupon coupon = proxy.findCouponById(1);
         System.out.println(coupon);
     }
