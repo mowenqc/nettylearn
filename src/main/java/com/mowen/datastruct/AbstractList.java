@@ -14,4 +14,6 @@ public abstract class AbstractList {
     protected  void ensureCapacity(){
         //扩充容量
     }
+
+    public abstract int size();
 }

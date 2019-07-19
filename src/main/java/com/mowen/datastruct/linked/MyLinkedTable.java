@@ -1,5 +1,7 @@
 package com.mowen.datastruct.linked;
 
+import com.mowen.datastruct.Node;
+
 /***
  * @description : 
  *

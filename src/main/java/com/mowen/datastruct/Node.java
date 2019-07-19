@@ -1,4 +1,4 @@
-package com.mowen.datastruct.linked;
+package com.mowen.datastruct;
 
 import java.util.Objects;
 
@@ -8,22 +8,22 @@ import java.util.Objects;
  * @create_time: 2019/7/18 8:23
  * @since: v1.0
  */
-class Node<T> {
+public class Node<T> {
 
     /**
      * 链表中的数据
      */
-    T data;
+    public T data;
 
     /**
      * 前一个数据节点
      */
-    Node previous;
+    public Node previous;
 
     /**
      * 后一个数据节点
      */
-    Node next;
+    public Node next;
 
     public Node(T data){
         this.data = data;
