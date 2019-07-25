@@ -11,7 +11,10 @@ import java.io.Serializable;
 
 /***
  * @description : 
- *
+ *用一个已经创建的实例作为原型，通过复制该原型对象来创建一个和原型相同或相
+ * 似的新对象。在这里，原型实例指定了要创建的对象的种类。用这种方式创建对象非常
+ * 高效，根本无须知道对象创建的细节
+ * java中一般的拷贝，直接实现cloneable，Cloneable 只有一个方法，clone, 怎么拷贝， 我们可以自己实现，也可以采用jvm默认的给我们实现
  * @author: mowen
  * @time: 2019/6/20 17:42
  * @since: v1.0
@@ -35,6 +38,11 @@ public class PrototypeModel implements Cloneable, Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     @Override

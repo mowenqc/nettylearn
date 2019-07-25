@@ -32,4 +32,10 @@ public class CommonTest {
         Collections.sort(list, (o1,o2)-> o2.compareTo(o1));
         System.out.println(list);
     }
+
+    @Test
+    public void testArray(){
+        Object [] o = new Object[10];
+        System.out.println(o.length);
+    }
 }

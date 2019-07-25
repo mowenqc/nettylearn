@@ -1,4 +1,4 @@
-package com.mowen.designpattern.buildmodel.factory.abstractfactory;
+package com.mowen.designpattern.buildmodel.factory.factorymethod;
 
 import com.mowen.designpattern.buildmodel.factory.model.Employee;
 

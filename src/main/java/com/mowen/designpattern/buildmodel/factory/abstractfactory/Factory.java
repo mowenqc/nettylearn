@@ -4,21 +4,20 @@ import com.mowen.designpattern.buildmodel.factory.model.Employee;
 
 /***
  * @description : 
- *  用到装饰模式的工厂，更为好用
  * @author: mowen
- * @time: 2019/6/20 19:18
+ * @create_time: 2019/7/23 20:24
  * @since: v1.0
  */
-public class Factory implements AbstractFactory {
+public interface Factory  {
 
-    private AbstractFactory factory;
-
-    public Factory(AbstractFactory factory){
-        this.factory = factory;
-    }
-    @Override
-    public Employee create() {
-        System.out.println("这是一个装饰模式的factory，可用性更强");
-        return factory.create();
-    }
+    /**
+     * 创建销售
+     * @return
+     */
+    Employee createSaler();
+    /**
+     * 创建程序员
+     * @return
+     */
+    public  Employee createProgrammer();
 }

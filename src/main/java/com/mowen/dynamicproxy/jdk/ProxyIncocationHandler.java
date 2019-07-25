@@ -15,6 +15,7 @@ import java.lang.reflect.Proxy;
 public class ProxyIncocationHandler<T> implements DynamicProxy, InvocationHandler {
 
     private T proxyObject;
+
     public ProxyIncocationHandler(T proxyObject){
         this.proxyObject = proxyObject;
     }

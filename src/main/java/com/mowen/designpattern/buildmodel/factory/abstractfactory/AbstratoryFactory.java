@@ -1,4 +1,4 @@
-package com.mowen.designpattern.buildmodel.factory.factorymethod;
+package com.mowen.designpattern.buildmodel.factory.abstractfactory;
 
 import com.mowen.designpattern.buildmodel.factory.model.Employee;
 import com.mowen.designpattern.buildmodel.factory.model.Programmer;
@@ -12,27 +12,25 @@ import com.mowen.designpattern.buildmodel.factory.model.Saler;
  * @time: 2019/6/20 18:06
  * @since: v1.0
  */
-public class SimpleFactory {
-
-
-    private SimpleFactory(){}
+public class AbstratoryFactory implements Factory{
+    private AbstratoryFactory(){}
     /**
      * 创建销售
      * @return
      */
-    public static Employee createSaler(){
+    @Override
+    public  Employee createSaler(){
         return new Saler();
     }
-
     /**
      * 创建程序员
      * @return
      */
-    public static Employee createProgrammer(){
+    @Override
+    public  Employee createProgrammer(){
         //也是初始化一些参数
         return new Programmer();
     }
-
     /**
      * 通过类型创建对象，这是简单工厂的一种变形
      * @param type
@@ -52,7 +50,6 @@ public class SimpleFactory {
     }
 
     public static void main(String[] args) {
-        Employee programmer = SimpleFactory.createProgrammer();
-        programmer.action();
+
     }
 }
