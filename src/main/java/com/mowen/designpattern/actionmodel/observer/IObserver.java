@@ -23,7 +23,11 @@ public interface IObserver {
      */
     void unRegister(ObserverListener listener);
 
-
+    /**
+     * 监听状态改变
+     * @param state
+     */
+    void stateChange(int state);
     /**
      * 消息
      * @param message

@@ -11,6 +11,6 @@ public class Programmer extends Employee {
 
     @Override
     public void action() {
-        System.out.println("苦逼的程序员正在写bug~");
+        System.out.println(getName() + "苦逼的程序员正在写bug~");
     }
 }

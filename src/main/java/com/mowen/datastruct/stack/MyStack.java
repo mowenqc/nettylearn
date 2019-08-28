@@ -11,10 +11,25 @@ import com.mowen.datastruct.AbstractList;
 public class MyStack<T> extends AbstractList implements IMyStack<T> {
 
     Object [] elementData;
+
+    /**
+     * 数组的当前栈顶的位置
+     */
     private int position;
+
+    /**
+     * 栈的元素的个数
+     */
+    private int size;
+
+    /**
+     * 栈的最大容量
+     */
+    private int capacity;
 
     public MyStack(){
         position = -1;
+        size = 0;
         elementData = new Object[10];
     }
 
@@ -25,6 +40,7 @@ public class MyStack<T> extends AbstractList implements IMyStack<T> {
         }
         ensureCapacity();
         elementData[position++] = t;
+        size++;
     }
 
     @Override
@@ -41,8 +57,24 @@ public class MyStack<T> extends AbstractList implements IMyStack<T> {
             T t = (T) elementData[position];
             elementData[position] = null;
             position--;
+            size--;
             return t;
         }
         return null;
+    }
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public boolean isFull() {
+        return size >= capacity;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
     }
 }

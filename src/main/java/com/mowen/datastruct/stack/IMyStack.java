@@ -27,4 +27,15 @@ public interface IMyStack<T> {
      */
     T pop();
 
+    /**
+     * 时候满栈
+     * @return
+     */
+    boolean isFull();
+
+    /**
+     * 时候为空
+     * @return
+     */
+    boolean isEmpty();
 }

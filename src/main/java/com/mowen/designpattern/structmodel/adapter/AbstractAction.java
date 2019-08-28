@@ -11,17 +11,17 @@ public class AbstractAction implements Action, HighAction {
 
     @Override
     public void drive() {
-
+        System.out.println("驾驶");
     }
 
     @Override
     public void walk() {
-
+        System.out.println("走路");
     }
 
     @Override
     public void run() {
-
+        System.out.println("奔跑大家都会，蜗牛都可以狂奔");
     }
 
     @Override

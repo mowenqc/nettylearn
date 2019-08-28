@@ -38,4 +38,17 @@ public class CommonTest {
         Object [] o = new Object[10];
         System.out.println(o.length);
     }
+
+    @Test
+    public void testNum(){
+        int i = 2;
+        int j = 7;
+        System.out.println(Integer.toBinaryString(i));
+        System.out.println(Integer.toBinaryString(j));
+        System.out.println(i & j);
+
+        int length = 15;
+        int head = 16;
+        System.out.println(head & length);
+    }
 }

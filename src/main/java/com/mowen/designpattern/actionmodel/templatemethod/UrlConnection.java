@@ -13,7 +13,6 @@ import java.net.URL;
  * @since: v1.0
  */
 public class UrlConnection extends NetConnection {
-
     @Override
     protected String request(URL url) {
         try {

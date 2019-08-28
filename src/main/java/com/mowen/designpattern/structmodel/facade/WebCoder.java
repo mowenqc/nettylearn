@@ -18,5 +18,4 @@ public class WebCoder implements Worker {
     public void finish() {
         System.out.println("前端工作完成~");
     }
-
 }

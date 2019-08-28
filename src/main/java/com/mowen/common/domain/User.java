@@ -67,6 +67,34 @@ public class User  implements Serializable {
     }
 
     @Override
+    public int hashCode() {
+        return Integer.valueOf(userId).hashCode() + 31* name.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj){
+            return true;
+        }
+        if(obj == null){
+            return false;
+        }
+        if(obj instanceof User){
+         User target = (User)obj;
+         if(userId == target.getUserId()){
+             if(name == null && target.name == null){
+                 return true;
+             }
+             if(name != null && name.equals(target.getName())){
+                 return true;
+             }
+         }
+        }
+        return false;
+
+    }
+
+    @Override
     public String toString() {
         return "User{" +
             "userId=" + userId +

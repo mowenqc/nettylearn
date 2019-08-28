@@ -13,6 +13,7 @@ import java.util.Map;
  * @since: v1.0
  */
 public class Observer implements IObserver {
+    int state;
     List<ObserverListener> observerListeners = new ArrayList<>();
     @Override
     public void addObservered(ObserverListener listener) {
@@ -29,12 +30,18 @@ public class Observer implements IObserver {
         observerListeners.forEach(observerListeners -> observerListeners.action(message));
     }
 
+    @Override
+    public void stateChange(int state) {
+        this.state = state;
+        Map<String, Object> message = new HashMap<>();
+        message.put("" + state, "状态被改变了，执行通知所有的被观察者执行各自的操作");
+        notify(message);
+    }
+
     public static void main(String[] args) {
         ObserverListener listener = new MessageListener();
         IObserver observer = new Observer();
         observer.addObservered(listener);
-        Map<String, Object> message = new HashMap<>();
-        message.put("1", "Test");
-        observer.notify(message);
+        observer.stateChange(2);
     }
 }

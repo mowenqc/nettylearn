@@ -11,6 +11,6 @@ public class Saler extends Employee {
 
     @Override
     public void action() {
-        System.out.println("我正在与客户沟通~~");
+        System.out.println(getName() + "我正在与客户沟通~~");
     }
 }

@@ -9,5 +9,13 @@ package com.mowen.designpattern.structmodel.adapter;
  */
 public interface HighAction {
 
+    /**
+     * 可以飞，能上天
+     */
     void fly();
+
+    /**
+     * 可以跑，能下海
+     */
+    void run();
 }

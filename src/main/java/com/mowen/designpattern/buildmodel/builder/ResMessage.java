@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 /***
- * desc  : com.mowen.common
+ * desc  : 一个rpc请求实例的定义
  * author: mowen
  * create_time: 2019/6/11 8:16
  */

@@ -6,9 +6,6 @@ package com.mowen.designpattern.structmodel.adapter;
  * 这样就将待适配的对象扩展了带有目标的功能
  * 目标也有了待适配对象的功能
  * 通常在源于目标有重叠功能时
- * @author: mowen
- * @time: 2019/6/20 20:15
- * @since: v1.0
  */
 public class ClassAdapter extends People implements Action {
 

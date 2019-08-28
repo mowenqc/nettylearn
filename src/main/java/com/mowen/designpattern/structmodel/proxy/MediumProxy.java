@@ -19,6 +19,8 @@ public class MediumProxy implements CheckDepartment{
 
     @Override
     public void checkEstate() {
+        System.out.println("代理之前做点啥");
         checkDepartment.checkEstate();
+        System.out.println("执行完了有插入做点啥");
     }
 }

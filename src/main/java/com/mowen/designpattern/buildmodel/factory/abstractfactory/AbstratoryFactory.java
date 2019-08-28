@@ -48,8 +48,4 @@ public class AbstratoryFactory implements Factory{
         }
         return employee;
     }
-
-    public static void main(String[] args) {
-
-    }
 }

@@ -12,7 +12,6 @@ public class TechDepartmentFacade {
     private ProductManager productManager;
 
     private UI ui;
-
     private WebCoder webCoder;
     private JavaCoder javaCoder;
     private Tester tester;
